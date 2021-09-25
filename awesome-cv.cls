@@ -180,11 +180,11 @@
 %   BoldItalicFont=*-MediumItalic,
 % ]{Roboto}
 
-\newcommand*{\headerfont}{\fontspec{New York}}
-\newcommand*{\headerfontlight}{\fontspec{New York}}
-\newcommand*{\footerfont}{\fontspec{New York}}
-\newcommand*{\bodyfont}{\fontspec{New York}}
-\newcommand*{\bodyfontlight}{\fontspec{New York}}
+\newcommand*{\headerfont}{\fontspec{New York Small}}
+\newcommand*{\headerfontlight}{\fontspec{New York Small}}
+\newcommand*{\footerfont}{\fontspec{New York Small}}
+\newcommand*{\bodyfont}{\fontspec{New York Small}}
+\newcommand*{\bodyfontlight}{\fontspec{New York Small}}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
