@@ -1,12 +1,12 @@
 .PHONY: all latexmk purge clean
 
-AUX = $(shell find cv/sections -name '*.tex')
+AUX = $(shell find src/sections -name '*.tex')
+BUILD_DIR = build.nosync
 
-all: cv/cv.tex $(AUX)
-	latexmk -xelatex -output-directory=cv $<
-watch: cv/cv.tex $(AUX)
-	latexmk -pvc -xelatex -outdir=cv $<
-purge:
-	rm -f cv/*.{log,out,aux,fdb_latexmk,xdv,fls}
-clean: purge
-	rm -f cv/*.pdf
+all: src/cv.tex $(AUX)
+	latexmk -xelatex -outdir=$(BUILD_DIR) $<
+	cp $(BUILD_DIR)/cv.pdf .
+watch: src/cv.tex $(AUX)
+	latexmk -pvc -xelatex -outdir=$(BUILD_DIR) $<
+clean: src/cv.tex
+	latexmk -C -outdir=$(BUILD_DIR) $<
