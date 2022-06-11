@@ -8,5 +8,5 @@ all: src/cv.tex $(AUX)
 	cp $(BUILD_DIR)/cv.pdf .
 watch: src/cv.tex $(AUX)
 	latexmk -pvc -xelatex -outdir=$(BUILD_DIR) $<
-clean: src/cv.tex
+clean:
 	latexmk -C -outdir=$(BUILD_DIR) $<
