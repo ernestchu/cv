@@ -181,8 +181,8 @@
 % ]{Roboto}
 
 \newcommand*{\headerfont}{\fontspec{New York Small}}
-\newcommand*{\headerfontlight}{\fontspec{New York Small}}
-\newcommand*{\footerfont}{\fontspec{New York Small}}
+\newcommand*{\headerfontlight}{\fontspec{DM Serif Display}}
+\newcommand*{\footerfont}{\fontspec{DM Serif Display}}
 \newcommand*{\bodyfont}{\fontspec{New York Small}}
 \newcommand*{\bodyfontlight}{\fontspec{New York Small}}
 
