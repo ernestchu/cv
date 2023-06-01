@@ -15,16 +15,24 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
+    - name: Install packages
+      run: |
+        apt-get update
+        apt-get install make wget
+        
     - name: Donwload fonts
       run: |
-        wget https://github.com/ernestchu/cv/releases/download/fonts/fonts.tar.gz && tar xzf fonts.tar.gz
+        wget https://github.com/ernestchu/cv/releases/download/fonts/fonts.tar.gz
+        tar xzf fonts.tar.gz
     
     - name: Install fonts
-      run: mkdir -p ~/.local/share/fonts && cp -r fonts/* ~/.local/share/fonts/ && fc-cache -rv
+      run: |
+        mkdir -p ~/.local/share/fonts
+        cp -r fonts/* ~/.local/share/fonts/
+        fc-cache -rv
 
     - name: Build
-      run: |
-        apt-get update && apt-get install make && make
+      run: make
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
