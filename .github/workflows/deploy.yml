@@ -10,7 +10,7 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: arkark/latexmk
+    container: arkark/latexmk:full
 
     steps:
     - uses: actions/checkout@v3
