@@ -18,7 +18,7 @@ jobs:
     - name: Install packages
       run: |
         apt-get update
-        apt-get install make wget fontconfig git
+        apt-get install make wget fontconfig git-all
         
     - name: Donwload fonts
       run: |
