@@ -13,11 +13,12 @@ jobs:
     container: nopreserveroot/latexmk
 
     steps:
+#     https://github.com/ernestchu/cv/releases/download/fonts/fonts.tar.gz
     - uses: actions/checkout@v3
 
     - name: Build
       run: |
-        make
+        apt-get update && apt-get install make && make
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
