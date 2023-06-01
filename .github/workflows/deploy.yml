@@ -10,15 +10,15 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
-    container: nopreserveroot/latexmk
+    container: arkark/latexmk
 
     steps:
     - uses: actions/checkout@v3
     
-    - name: Install packages
-      run: |
-        apt-get update
-        apt-get install -y make wget fontconfig git-all
+#     - name: Install packages
+#       run: |
+#         apt-get update
+#         apt-get install -y make wget fontconfig git-all
         
     - name: Donwload fonts
       run: |
