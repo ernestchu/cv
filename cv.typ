@@ -28,6 +28,7 @@
   colored-headers: true,
   accent-color: "#000",
   show-footer: true,
+  footer-title: "curriculum-vitae",
   use-smallcaps: false,
   bold-full-name: true,
 )
