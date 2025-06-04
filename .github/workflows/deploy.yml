@@ -16,7 +16,7 @@ jobs:
       - name: Donwload fonts
         run: |
           wget https://github.com/ernestchu/cv/releases/download/fonts/fonts.tar.gz
-          tar xzf fonts.tar.gz
+          tar xf fonts.tar.gz
 
       - name: Install Typst
         uses: typst-community/setup-typst@v4
