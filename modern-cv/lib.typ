@@ -99,7 +99,7 @@
   ]
 }
 
-#let __resume_footer(author, language, lang_data, date, font, use-smallcaps: true) = {
+#let __resume_footer(author, title, language, lang_data, date, font, use-smallcaps: true) = {
   set text(fill: gray, size: 0.9em, font: font)
   __justify_align_3[
     #__apply_smallcaps(date, use-smallcaps)
@@ -107,7 +107,7 @@
     #__apply_smallcaps(
       {
         let name = __format_author_name(author, language)
-        name + " · " + linguify("resume", from: lang_data)
+        name + " · " + linguify(title, from: lang_data)
       },
       use-smallcaps,
     )
@@ -196,6 +196,7 @@
   accent-color: default-accent-color,
   colored-headers: true,
   show-footer: true,
+  footer-title: "resume",
   language: "en",
   font: ("Source Sans Pro", "Source Sans 3"),
   base-font-size: 11pt,
@@ -234,6 +235,7 @@
     margin: (left: 15mm, right: 15mm, top: 10mm, bottom: 20mm),
     footer: if show-footer [#__resume_footer(
         author,
+        footer-title,
         language,
         lang_data,
         date,
