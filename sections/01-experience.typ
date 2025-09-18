@@ -27,14 +27,3 @@
   - Maintain all websites under the office
   - HTML/JS/CSS, PHP, Vue.js, Express.js, Sequelize.js, MariaDB, MongoDB
 ]
-
-#resume-entry(
-  title: "Northwest Analytics Inc - Taiwan",
-  description: "Data Engineer Intern",
-  location: "Kaohsiung, Taiwan (Remote)",
-  date: "June 2018 - June 2019",
-)
-
-#resume-item[
-  - Data preprocessing for factory monitoring
-]
