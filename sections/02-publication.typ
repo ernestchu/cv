@@ -14,7 +14,7 @@
   }
 }
 
-= Publications & Preprints
+= Selected Publications & Preprints
 
 #set enum(numbering: "[1]")
 
