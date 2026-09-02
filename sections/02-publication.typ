@@ -19,6 +19,17 @@
 #set enum(numbering: "[1]")
 
 + #pub-entry(
+  "Ernie Chu, I-Sheng Fang, Tai-Ming Huang, Pin-Yen Chiu, Vishal Patel, Jun-Cheng Chen",
+  "Ernie Chu",
+  "Adapt2Hide: Leveraging Off-The-Shelf Autoencoder for Reversible Visual Processing",
+  "ICIP",
+  "2026 (oral, top 3%)",
+  (
+    ("https://ieeexplore.ieee.org/abstract/document/11630116", "file-pdf"),
+  )
+)
+
++ #pub-entry(
   "Yang-Che Sun, Cheng Yu Yeo, Ernie Chu, Jun-Cheng Chen, Yu-Lun Liu",
   "Ernie Chu",
   "FIPER: Factorized Features for Robust Image Super-Resolution and Compression",
