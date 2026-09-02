@@ -3,7 +3,7 @@
 = Experience
 
 #resume-entry(
-  title: "Pinterest Inc.",
+  title: "Pinterest, Inc.",
   description: "Machine Learning Engineer Intern",
   location: "Palo Alto, CA",
   date: "May. 2026 - Aug. 2026",
