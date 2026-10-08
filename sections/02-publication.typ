@@ -19,6 +19,17 @@
 #set enum(numbering: "[1]")
 
 + #pub-entry(
+  "Ernie Chu, Vishal Patel",
+  "Ernie Chu",
+  "Not All Tokens Need 40 Steps: Heterogeneous Step Allocation in Diffusion Transformers for Efficient Video Generation",
+  "arXiv preprint",
+  "2026",
+  (
+    ("https://arxiv.org/abs/2605.06892", "file-pdf"),
+  )
+)
+
++ #pub-entry(
   "Ernie Chu, I-Sheng Fang, Tai-Ming Huang, Pin-Yen Chiu, Vishal Patel, Jun-Cheng Chen",
   "Ernie Chu",
   "Adapt2Hide: Leveraging Off-The-Shelf Autoencoder for Reversible Visual Processing",
